@@ -1,0 +1,310 @@
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Acme|Sintony:400,700);
+ body {
+    font-family: 'Sintony', Helvetica, Arial, sans-serif;
+    background-color: #dfdfdf;
+    color: #868686;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Acme', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.main-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.main-nav .bg-orange,
+.main-nav .bg-purple,
+.main-nav .bg-yellow,
+.main-nav .bg-green,
+.main-nav .bg-blue {
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.bg-orange {
+    background-color: #f26c4e;
+}
+.main-nav .bg-orange:hover,
+.btn.bg-orange:hover {
+    background-color: #fd8a70;
+}
+.bg-purple {
+    background-color: #cf6baa;
+}
+.main-nav .bg-purple:hover {
+    background-color: #e993c9;
+}
+.bg-yellow {
+    background-color: #f2c24d;
+}
+.main-nav .bg-yellow:hover {
+    background-color: #ffd777;
+}
+.bg-green {
+    background-color: #a3d178;
+}
+.main-nav .bg-green:hover {
+    background-color: #c4eaa0;
+}
+.bg-blue {
+    background-color: #78ccd0;
+}
+.main-nav .bg-blue:hover {
+    background-color: #9de4e7;
+}
+.bg-darkgreen {
+    background-color: #8ebe5f;
+}
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+/*  Header Styles */
+
+header {
+    text-align: center;
+    width: 100%
+}
+.main-title {
+    font-size: 48px;
+    line-height: 40px;
+}
+.main-title span {
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+.main-nav {
+    background-color: #cdcdcd;
+    width: 100%;
+}
+.main-nav ul {
+    list-style: none;
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    left: -24px;
+}
+.main-nav li {
+    float: left;
+    border-left: 4px solid #dfdfdf;
+    width: 140px;
+    height: 70px;
+}
+.main-nav li:last-child {
+    border-right: 4px solid #dfdfdf;
+}
+.main-nav li a:before {
+    content: ' ';
+    background-color: #f26c4e;
+    border: 3px solid #dfdfdf;
+    border-radius: 50px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: 27px;
+}
+.main-nav li:last-child a:after {
+    content: ' ';
+    background-color: #f26c4e;
+    border: 3px solid #dfdfdf;
+    border-radius: 50px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -10px;
+    top: 27px;
+}
+.main-nav li a {
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-top: 24px;
+}
+/* Feature Slider Styles */
+
+.feature-slider {
+    background-color: white;
+    position: relative;
+    height: 320px;
+    margin-top: 5px;
+}
+.nav-left,
+.nav-right {
+    position: absolute;
+    height: 53px;
+    width: 53px;
+    top: 130px;
+}
+.nav-left {
+    background: url('../img/slider-left.png') top left no-repeat;
+    left: -10px;
+}
+.nav-right {
+    background: url('../img/slider-right.png') top left no-repeat;
+    right: -10px;
+}
+.slider-nav {
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 10px;
+    margin: 0px;
+}
+.slider-nav li {
+    width: 10px;
+    height: 10px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+}
+.slider-nav li a {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+.slider-nav li.active {
+    background-color: #f26c4e;
+}
+.slide-image {
+    position: absolute;
+    right: 90px;
+    bottom: 0px;
+}
+.slide-text {
+    width: 310px;
+    margin-left: 90px;
+    margin-top: 40px;
+    float: left;
+}
+.slide-text h2 {
+    font-family: 'Sintony', Helvetica, Arial, sans-serif;
+    color: #f26c4e;
+    margin-bottom: 0px;
+}
+.feature-services {
+    display: table;
+}
+.column-half {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+}
+.column-half h2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+.column-half p {
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Sintony', Helvetica, Arial, sans-serif;
+}
+.column-half p a {
+    color: #fff;
+    text-decoration: none;
+}
+.column-half p a:hover {
+    color: #e7ffbc;
+    text-decoration: none;
+}
+/* Footer styles */
+
+footer {
+    background-color: #ededed;
+    width: 100%
+}
+.column-one-third {
+    width: 33.333%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.blog-list {
+    color: #a3d178;
+    padding-left: 20px;
+}
+.blog-list a {
+    color: #78ccd0;
+    font-weight: 700;
+    text-decoration: none;
+}
+.blog-list a:hover {
+    text-decoration: underline;
+}
+.social-media {
+    list-style: none;
+    padding-left: 0px;
+}
+.social-media li {
+    float: left;
+    margin-right: 10px;
+}
+.column-registration {
+    background-color: #f26c4e;
+}
+.column-registration h2 {
+    color: #fff;
+}
+#txtName,
+#txtEmail {
+    margin-bottom: 10px;
+    height: 45px;
+    width: 235px;
+    padding-left: 8px;
+}
+#btnRegister {
+    background-color: #f2c24e;
+    height: 45px;
+    width: 245px;
+    border-radius: 2px;
+}
+/* Clearfix */
+
+/* when columns in the footer are floated left, we lose the background color.  we use Clearfix to fix this problem.*/
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
